@@ -1,0 +1,30 @@
+#!/bin/bash
+
+directory=$1
+
+if [ -d $directory ]
+        then
+                for term in .bak .tmp .backup
+                do
+                        rm $directory/*$term
+                done
+        else
+                echo "Error папка не существует"
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
